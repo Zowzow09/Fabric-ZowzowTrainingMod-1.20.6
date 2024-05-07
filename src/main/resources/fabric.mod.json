@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "zz_trainingmod",
+	"version": "${version}",
+	"name": "Zowzow's Training Mod",
+	"description": "Training Mod to learn Minecraft modding!",
+	"authors": [
+		"Zowzow"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT ",
+	"icon": "assets/zz_trainingmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zowzow.trainingmod.TrainingMod"
+		],
+		"client": [
+			"net.zowzow.trainingmod.TrainingModClient"
+		],
+		"fabric-datagen": [
+			"net.zowzow.trainingmod.TrainingModDataGenerator"
+		]
+	},
+	"mixins": [
+		"zz_trainingmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
